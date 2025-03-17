@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijos Matemáticos e Informáticos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Acertijos Matemáticos e Informáticos</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="acertijos.html">Acertijos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="acertijos-container">
+            <div class="acertijo">
+                <h2>Acertijo Matemático</h2>
+                <div class="contenido-acertijo">
+                    <p><strong>Enunciado:</strong> Un número es divisible por 7 si la diferencia entre el doble de su última cifra y el número que queda al quitar la última cifra es múltiplo de 7. Si tienes el número <strong>12345</strong>, ¿es divisible por 7?</p>
+                    <p><strong>Pistas:</strong></p>
+                    <ul>
+                        <li>Haz la operación con el número: dobla la última cifra y resta de la parte restante.</li>
+                        <li>Repite el proceso hasta obtener un número suficientemente pequeño para comprobar si es divisible por 7.</li>
+                    </ul>
+                    <input type="text" id="respuesta1" placeholder="Tu respuesta" aria-label="Respuesta al acertijo matemático">
+                    <button onclick="verificarRespuesta1()" aria-label="Verificar respuesta matemático">Verificar</button>
+                    <p id="resultado1"></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="acertijos-container">
+            <div class="acertijo">
+                <h2>Acertijo Informático</h2>
+                <div class="contenido-acertijo">
+                    <p><strong>Enunciado:</strong> Imagina que tienes una lista desordenada de 1,000 números enteros y necesitas encontrar un número específico. ¿Qué algoritmo utilizarías y cuál sería el tiempo de ejecución en el peor de los casos? Justifica tu respuesta.</p>
+                    <p><strong>Pistas:</strong></p>
+                    <ul>
+                        <li>Puedes usar una búsqueda secuencial o una búsqueda binaria, dependiendo de si la lista está ordenada.</li>
+                        <li>Si la lista está desordenada, una búsqueda binaria no sería la mejor opción. Piensa en la eficiencia de otros métodos.</li>
+                    </ul>
+                    <input type="text" id="respuesta2" placeholder="Tu respuesta" aria-label="Respuesta al acertijo informático">
+                    <button onclick="verificarRespuesta2()" aria-label="Verificar respuesta informático">Verificar</button>
+                    <p id="resultado2"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ 
+</body>
+</html>

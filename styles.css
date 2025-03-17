@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #4a148c, #6200ea);
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1s;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #0288d1;
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el cursor */
+}
+
+/* SECCIÓN DESTACADA */
+.destacado {
+    background-color: #ff5722;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1s;
+}
+
+.destacado h2 {
+    margin-top: 0;
+}
+
+/* SECCIÓN DE CONTENIDO */
+.contenido {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.bloque {
+    background-color: #2a2a40;
+    border: 2px solid #00bcd4;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.bloque:hover {
+    transform: translateY(-5px);  /* Efecto de elevación en hover */
+    border-color: #03dac6;
+}
+
+.bloque h3 {
+    margin-top: 0;
+}
+
+.bloque .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.bloque .btn:hover {
+    background-color: #3700b3;
+    transform: scale(1.05); /* Efecto de botón que crece */
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #6200ea;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* ANIMACIONES */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTENEDOR PRINCIPAL DE LOS ACERTIJOS */
+.acertijos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra vertical y horizontalmente */
+    min-height: 80vh; /* Asegura que se centre incluso en pantallas más grandes */
+    width: 100%;
+}
+
+/* ESTILO DE LOS ACERTIJOS (Mejorado) */
+.acertijo {
+    background-color: #2a2a40;
+    border: 3px solid #00bcd4;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%; /* Tamaño ajustado para que se vea centrado y limpio */
+    max-width: 600px; /* Limita el ancho máximo para evitar que se extienda demasiado */
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+}
+
+.acertijo:hover {
+    transform: scale(1.05);
+    border-color: #03dac6;
+}
+
+.acertijo h2 {
+    color: #00e676;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #03dac6;
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.1);
+}
+
+/* Resultado del acertijo */
+#resultado1, #resultado2 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+/* SECCIÓN DE CURIOSIDADES - Estilo Mejorado */
+.introduccion {
+    background-color: #1e1e2f;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 85%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.introduccion h2 {
+    text-align: center;
+    color: #00e676;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.introduccion ul {
+    list-style: none; /* Quita los puntos por defecto */
+    padding: 0;
+}
+
+.introduccion li {
+    background: linear-gradient(135deg, #4a148c, #6200ea);
+    color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.introduccion li:hover {
+    background: linear-gradient(135deg, #6200ea, #4a148c); /* Efecto hover inverso */
+    transform: scale(1.05); /* Efecto de elevación */
+}
+
+/* Íconos decorativos para cada curiosidad */
+.introduccion li::before {
+    content: "❓"; /* Icono decorativo */
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
